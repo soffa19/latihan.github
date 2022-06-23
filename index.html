@@ -1,51 +1,42 @@
 <!DOCTYPE html>
+<html>
+    <head>
+        <title> DOM Javascript</title>
+    </head>
+    <body>
+        <h1> Belajar DOM Javascript</h1>
+        <img src="astronot.jpg" width="300">
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>Calculator Application</title>
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-</head>
-<body>
+        <div id="box 1"></div>
 
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
 
-<div class="calculator">
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Jvascript</li>
+            <div></div>
+        </ul>
 
-    <div class="userInput"><p class="userEntry"></p><p class="finalCalc"></p></div>
+        <script>
+            //selektor
+            document.getElementById('box1').innerHTML = "Sekolah Koding";
 
-    <div class="calcButtons">
-    
+            var boxes = document.getElementsByClassName('boxes');
+            boxes[0].innerHTML = "versi terbaru 1";
+            boxes[1].innerHTML = "versi sebelumnya 2";
+            boxes[2].innerHTML = "versi terlama 3"; 
 
-        <button>+/-</button>
-        <button>AC</button>
-        <button>DEL</button>
-        <button class="operator">*</button>
-
-        <button class="number">1</button>
-        <button class="number">2</button>
-        <button class="number">3</button>
-        <button class="operator">+</button>
-
-        <button class="number">4</button>
-        <button class="number">5</button>
-        <button class="number">6</button>
-        <button class="operator">/</button>
-    
-        <button class="number">7</button>
-        <button class="number">8</button>
-        <button class="number">9</button>
-        <button class="operator">-</button>
-
-    
-        <button class="number">0</button>
-        <button class="decimal">.</button>
-        <button class="operator">=</button>
-
-
-    </div>
-</div>
-
-<script src="./app.js"></script>
-
-</body>
+            var list = document.getElementsByTagName('li');
+            list[0].innerHTML = "PHP";
+            list[1].innerHTML = "SASS";
+            list[2].innerHTML = "JQuery";
+       
+            document.querySelectorAll('#box1') [0].innerHTML = "koding 123";
+            document.querySelectorAll('.boxes') [0].innerHTML = "koding 123";
+            document.querySelectorAll('ul div') [0].innerHTML = "koding 123";
+        </script>
+    </body>
 </html>
